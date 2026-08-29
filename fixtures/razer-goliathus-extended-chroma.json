@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "razer-goliathus-extended-chroma",
+  "manufacturer": "Razer",
+  "model": "Goliathus Extended Chroma",
+  "device_class": "mousepad",
+  "usb": {
+    "vendor_id": "1532",
+    "product_id": "0C02"
+  },
+  "detection": {
+    "openrazer_name_contains": "Goliathus"
+  },
+  "backend": {
+    "type": "software-rgb-sysfs",
+    "sysfs_required_endpoint": "matrix_effect_static"
+  },
+  "capabilities": {
+    "brightness": true,
+    "matrix": {
+      "rows": 1,
+      "columns": 1
+    }
+  },
+  "effects": {
+    "off": {
+      "endpoint": "matrix_effect_none",
+      "payload": "none",
+      "colours": 0
+    },
+    "static": {
+      "endpoint": "matrix_effect_static",
+      "payload": "rgb",
+      "colours": 1
+    },
+    "spectrum": {
+      "endpoint": "matrix_effect_spectrum",
+      "payload": "none",
+      "colours": 0
+    },
+    "breath": {
+      "endpoint": "matrix_effect_breath",
+      "payload": "rgb-list",
+      "colours": 1
+    },
+    "reactive": {
+      "endpoint": "matrix_effect_reactive",
+      "payload": "speed-rgb",
+      "colours": 1
+    }
+  }
+}

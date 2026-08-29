@@ -1,0 +1,13 @@
+{
+  "serpent_green": "#00FF66",
+  "accent_green": "#19E066",
+  "dark_bg": "#0B0F0C",
+  "panel_bg": "#111618",
+  "card_bg": "#151A1C",
+  "border": "#2A2F33",
+  "text_primary": "#E6E7E8",
+  "text_secondary": "#A2A9AD",
+  "warning": "#FFB000",
+  "error": "#D92B36",
+  "info": "#168BFF"
+}

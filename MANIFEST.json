@@ -1,0 +1,42 @@
+{
+  "AI_MANUAL.md": {
+    "sha256": "83ba056524956f5c345a08618f66c6d7c428e715999406224cb400824d2557d3",
+    "bytes": 38322
+  },
+  "docs/ai/architecture.md": {
+    "sha256": "04c4f16e6b1e5e81e844e3f3604acdcc286a833eb873cc5e7a9e274460e5bd0d",
+    "bytes": 3214
+  },
+  "docs/ai/effects.md": {
+    "sha256": "a6c5b9961f77d9d3f843686d33a974d5c64c37bb05b4f2c085ad63a513e4f7dd",
+    "bytes": 3331
+  },
+  "docs/ai/fixtures-devices.md": {
+    "sha256": "5784794cfd9405dff1fa3aa8937c0848d9686eeb942edb6c77888c159c96cc7a",
+    "bytes": 2533
+  },
+  "docs/ai/gui-scenes-sync.md": {
+    "sha256": "4d4efa317b64d1bcd70318ec6930145cafbd88a97d57e1f0a014bb27c1f01fea",
+    "bytes": 1637
+  },
+  "docs/ai/historical-sources.md": {
+    "sha256": "22e1b9a21dc8df29f7dd76c95f31ac27e125a9837877ddcd77edc50b9f3600c4",
+    "bytes": 1906
+  },
+  "docs/ai/release-packaging.md": {
+    "sha256": "c3d00463e7ee711215a09577eb5f960f24053e6c95005b254775a1bb415c0eb9",
+    "bytes": 2037
+  },
+  "docs/ai/runtime-services.md": {
+    "sha256": "9b857841b2dca3fc87d8403c0f08ca06ce1b059a1792116a23bc26bf88258e34",
+    "bytes": 1799
+  },
+  "docs/ai/testing-debugging.md": {
+    "sha256": "6b95a91500255af924d0c054a7c135bf76bf382417ebc509537a7a6fca52c06a",
+    "bytes": 1885
+  },
+  "install-ai-manual.py": {
+    "sha256": "af117acef8a819645f64fbef657c84461fbf2188d7e804b0f73cfe92ec0626f3",
+    "bytes": 1399
+  }
+}

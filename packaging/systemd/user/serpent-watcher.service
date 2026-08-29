@@ -1,0 +1,16 @@
+[Unit]
+Description=Watch for events requiring Serpent lighting restoration
+After=graphical-session.target openrazer-daemon.service
+Wants=openrazer-daemon.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/share/serpent/serpent-watcher.sh
+Restart=on-failure
+RestartSec=3
+KillMode=control-group
+TimeoutStopSec=5
+
+[Install]
+WantedBy=graphical-session.target

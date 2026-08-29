@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Serpent
+Comment=Start Serpent in the system tray
+Exec=serpent-gui --tray
+Terminal=false
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
+X-Serpent-Managed=true

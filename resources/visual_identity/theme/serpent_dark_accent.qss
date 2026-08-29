@@ -1,0 +1,1128 @@
+QWidget { color:#E8ECE9; selection-background-color:#174E2B; }
+QMainWindow,QDialog,QWidget#serpentRoot { background:#080D0A; }
+QLabel#serpentHeading { color:#F3F7F4; padding-top:8px; }
+QLabel#serpentSubtitle { color:#8E9B93; padding-bottom:6px; }
+QLabel#serpentFooter { color:#657169; padding:5px 0 1px 0; }
+QTabWidget#serpentMainTabs::pane { background:#0E1410; border:1px solid #26312A; border-radius:9px; top:-1px; }
+QTabWidget#serpentMainTabs QTabBar::tab { background:#111713; color:#AEB7B1; border:1px solid transparent; border-bottom:2px solid transparent; padding:9px 15px; margin-right:2px; min-width:52px; }
+QTabWidget#serpentMainTabs QTabBar::tab:hover { color:#E9F1EB; background:#151D17; }
+QTabWidget#serpentMainTabs QTabBar::tab:selected { color:#39F47A; background:#121A14; border-color:#26312A; border-bottom:2px solid #21E66A; }
+QScrollArea,QAbstractScrollArea { background:transparent; border:none; }
+QGroupBox { background:#121713; border:1px solid #303A33; border-radius:8px; margin-top:10px; padding:12px 10px 10px; }
+QGroupBox::title { subcontrol-origin:margin; subcontrol-position:top center; padding:0 8px; color:#CBD3CD; background:#121713; }
+QGroupBox#serpentInfoCard { background:#101612; border-color:#334039; }
+QPushButton { background:#151C17; color:#DCE3DE; border:1px solid #344039; border-radius:6px; padding:6px 11px; min-height:18px; }
+QPushButton:hover { background:#19231C; border-color:#22D965; color:#F4FFF7; }
+QPushButton:pressed { background:#11321D; border-color:#2CF579; }
+QPushButton:disabled { color:#66716A; background:#101512; border-color:#252D28; }
+QLineEdit,QPlainTextEdit,QTextEdit,QSpinBox,QDoubleSpinBox,QComboBox { background:#0C110E; color:#E3E8E4; border:1px solid #39433D; border-radius:5px; padding:5px 7px; selection-background-color:#18542E; }
+QLineEdit:focus,QPlainTextEdit:focus,QTextEdit:focus,QSpinBox:focus,QDoubleSpinBox:focus,QComboBox:focus { border-color:#20D765; }
+QComboBox::drop-down { border:none; width:24px; }
+QComboBox QAbstractItemView { background:#101612; color:#E4E9E5; border:1px solid #39433D; selection-background-color:#174E2B; }
+QListWidget,QTreeWidget,QTableWidget { background:#0C110E; alternate-background-color:#121814; color:#DDE4DF; border:1px solid #333D36; border-radius:6px; outline:none; }
+QListWidget::item:selected,QTreeWidget::item:selected,QTableWidget::item:selected { background:#174E2B; color:#F1FFF5; }
+QMenuBar { background:#090E0B; color:#D8DFDA; border-bottom:1px solid #1D2720; }
+QMenuBar::item { background:transparent; padding:5px 8px; }
+QMenuBar::item:selected { background:#152019; color:#F1F6F2; }
+QMenu { background:#111713; color:#E2E7E3; border:1px solid #364139; padding:5px; }
+QMenu::item { padding:6px 24px 6px 9px; border-radius:4px; }
+QMenu::item:selected { background:#174E2B; color:#F3FFF6; }
+QMenu::separator { height:1px; background:#2B352E; margin:5px 7px; }
+QProgressBar { background:#2B302D; color:#F4FFF6; border:1px solid #3A433D; border-radius:4px; text-align:left; }
+QProgressBar::chunk { background:#21D968; border-radius:3px; }
+QSlider::groove:horizontal { height:5px; background:#343B36; border-radius:2px; }
+QSlider::sub-page:horizontal { background:#1DAF55; border-radius:2px; }
+QSlider::handle:horizontal { background:#25E970; border:1px solid #53FF91; width:14px; margin:-5px 0; border-radius:7px; }
+QCheckBox { spacing:7px; }
+QCheckBox::indicator { width:15px; height:15px; background:#0B100D; border:1px solid #465149; border-radius:3px; }
+QCheckBox::indicator:checked { background:#1DD764; border:1px solid #3CF584; }
+QScrollBar:vertical { background:#0D120F; width:12px; margin:2px; border-radius:6px; }
+QScrollBar::handle:vertical { background:#414A44; min-height:32px; border-radius:5px; }
+QScrollBar::handle:vertical:hover { background:#59635C; }
+QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical,QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical { background:none; height:0; }
+QToolTip { color:#EDF3EF; background:#151C17; border:1px solid #3A463E; padding:5px; }
+
+/* M10.0.0.39-C - surgical visual refinement */
+
+QLabel[serpentRole="secondaryText"],
+QLabel#serpentSecondaryLabel {
+    color: #AAB6AE;
+}
+
+QLabel#serpentHeading {
+    color: #F4F8F5;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+QLabel#serpentSubtitle {
+    color: #9AA79F;
+    padding-bottom: 8px;
+}
+
+QLabel#serpentFooter {
+    color: #7D8A82;
+}
+
+QLabel#serpentPanelTitle,
+QLabel#serpentDialogTitle {
+    color: #F1F6F2;
+}
+
+QWidget#serpentDeviceTab {
+    background: transparent;
+}
+
+QLabel#serpentDeviceTabKind {
+    color: #EBF1ED;
+}
+
+QLabel#serpentDeviceTabModel {
+    color: #9AA79F;
+}
+
+QGroupBox#serpentSectionCard {
+    background: #101611;
+    border-color: #2A3730;
+    padding: 14px 12px 12px 12px;
+}
+
+QGroupBox#serpentDeviceCard {
+    background: #0E1510;
+    border: 1px solid #2A3730;
+    border-radius: 9px;
+    margin-top: 8px;
+    padding: 10px;
+}
+
+QGroupBox#serpentDeviceCard:hover {
+    border-color: #365042;
+}
+
+QLabel#serpentStatusState {
+    color: #DDE6E0;
+}
+
+QDialog#serpentSettingsDialog,
+QDialog#serpentAboutDialog {
+    background: #090E0B;
+    border: 1px solid #334038;
+}
+
+QDialog#serpentSettingsDialog QDialogButtonBox QPushButton,
+QDialog#serpentAboutDialog QDialogButtonBox QPushButton {
+    min-width: 78px;
+}
+
+QLabel#serpentAboutInformation {
+    color: #D6DED8;
+}
+
+QGroupBox#serpentInfoCard,
+QGroupBox#serpentSectionCard {
+    border-radius: 9px;
+}
+
+QTabWidget#serpentMainTabs::pane {
+    border-color: #2B3831;
+}
+
+QTabWidget#serpentMainTabs QTabBar::tab:selected {
+    background: #152018;
+    border-color: #304138;
+    border-bottom-color: #22E96C;
+}
+
+QMenu {
+    border-radius: 7px;
+}
+
+QPushButton {
+    min-height: 20px;
+}
+
+QProgressBar {
+    min-height: 18px;
+}
+
+/* M10.0.0.39-D - structural concept pass */
+
+QLabel#serpentHeading {
+    min-height: 58px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+}
+
+QWidget#serpentRuntimeStrip {
+    background: #0D130F;
+    border: 1px solid #27342D;
+    border-radius: 8px;
+}
+
+QWidget#serpentRuntimeStrip QLabel {
+    padding: 2px 8px;
+    color: #AAB6AE;
+}
+
+QLabel#serpentRuntimeGood[runtimeHealthy="true"] {
+    color: #31E879;
+}
+
+QLabel#serpentRuntimeGood[runtimeHealthy="false"] {
+    color: #E8A63A;
+}
+
+QLabel#serpentRuntimeNeutral {
+    color: #D6DED8;
+}
+
+QListWidget#serpentSettingsNavigation {
+    background: #0C120E;
+    border: none;
+    border-right: 1px solid #2C3931;
+    border-radius: 0px;
+    padding: 12px 8px;
+}
+
+QListWidget#serpentSettingsNavigation::item {
+    padding: 10px 12px;
+    margin: 2px 0px;
+    border-radius: 6px;
+    color: #AEB9B1;
+}
+
+QListWidget#serpentSettingsNavigation::item:hover {
+    background: #121D16;
+    color: #EEF5F0;
+}
+
+QListWidget#serpentSettingsNavigation::item:selected {
+    background: #164E29;
+    color: #F4FFF6;
+}
+
+QStackedWidget#serpentSettingsPages {
+    background: #090E0B;
+}
+
+QLabel#serpentSettingsInfo {
+    background: #0D1711;
+    border: 1px solid #284434;
+    border-radius: 7px;
+    padding: 12px;
+    color: #AFC0B5;
+}
+
+QDialogButtonBox#serpentSettingsButtons {
+    background: #0B110D;
+    border-top: 1px solid #27342D;
+    padding: 10px 14px;
+}
+
+QGroupBox#serpentDeviceCard {
+    background: #0C130E;
+    border-color: #304239;
+    padding: 12px;
+}
+
+QGroupBox#serpentDeviceCard::title {
+    color: #DCE6DF;
+    padding: 0 10px;
+}
+
+QMenu#serpentTrayMenu {
+    background: #101713;
+    border: 1px solid #34423A;
+}
+
+/* M10.0.0.39-D Fix-1 - focused Startup settings dialog */
+
+QDialog#serpentSettingsDialog {
+    background: #090E0B;
+}
+
+QDialog#serpentSettingsDialog QLabel#serpentDialogTitle {
+    color: #F1F6F2;
+}
+
+QDialog#serpentSettingsDialog QLabel#serpentSettingsInfo {
+    margin-top: 4px;
+}
+
+QDialog#serpentSettingsDialog QDialogButtonBox#serpentSettingsButtons {
+    background: transparent;
+    border-top: 1px solid #27342D;
+    padding-top: 12px;
+}
+
+/* M10.0.0.39-E - iconography + tray polish */
+
+QMenu#serpentTrayMenu {
+    background: #0C130F;
+    color: #E4EBE6;
+    border: 1px solid #34453B;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QMenu#serpentTrayMenu::item {
+    min-height: 22px;
+    padding: 7px 30px 7px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+QMenu#serpentTrayMenu::item:selected {
+    background: #143E23;
+    color: #F2FFF6;
+    border-color: #205E35;
+}
+
+QMenu#serpentTrayMenu::item:disabled {
+    background: transparent;
+    color: #69756D;
+}
+
+QMenu#serpentTrayMenu::separator {
+    height: 1px;
+    background: #29372F;
+    margin: 6px 7px;
+}
+
+QMenu#serpentTrayMenu::icon {
+    padding-left: 2px;
+}
+
+QPushButton[serpentRole="primary"] {
+    background: #174527;
+    color: #F3FFF6;
+    border: 1px solid #286D40;
+}
+
+QPushButton[serpentRole="primary"]:hover {
+    background: #1C5730;
+    border-color: #35A75C;
+}
+
+QPushButton[serpentRole="primary"]:pressed {
+    background: #12361F;
+    border-color: #23954D;
+}
+
+QPushButton[serpentRole="secondary"] {
+    background: #111914;
+    color: #D7DFD9;
+    border: 1px solid #354139;
+}
+
+QPushButton[serpentRole="secondary"]:hover {
+    background: #18221B;
+    border-color: #526058;
+}
+\n
+
+
+/* M10.0.0.39-F visual roles */
+
+QPushButton[role="primary"]{
+ background:#1A5A33;color:#F3FFF6;border:1px solid #2FA45D;
+ border-radius:6px;padding:6px 14px;
+}
+QPushButton[role="primary"]:hover{background:#237241;border-color:#45C977;}
+QPushButton[role="secondary"]{
+ background:#141A16;color:#DCE5DF;border:1px solid #34443B;
+ border-radius:6px;padding:6px 14px;
+}
+QPushButton[role="secondary"]:hover{background:#1B231E;}
+QPushButton[role="danger"]{
+ background:#5A1D22;color:#FFFFFF;border:1px solid #B8424A;
+ border-radius:6px;padding:6px 14px;
+}
+QPushButton[role="danger"]:hover{background:#71272D;}
+
+QFrame[status="success"], QWidget[status="success"]{
+ border:1px solid #1F7A42;border-radius:6px;
+}
+QFrame[status="warning"], QWidget[status="warning"]{
+ border:1px solid #C88A1A;border-radius:6px;
+}
+QFrame[status="error"], QWidget[status="error"]{
+ border:1px solid #B43A44;border-radius:6px;
+}
+
+QTabBar::tab:selected{
+ background:#102518;
+ border-top:2px solid #00E676;
+ color:#F1FFF5;
+}
+QGroupBox::title{
+ color:#71F59A;
+ font-weight:600;
+}
+
+/* M10.0.0.39-G - content surface + control polish */
+
+/* Core surfaces */
+QMainWindow,
+QDialog {
+    background: #080D0A;
+}
+
+QWidget#serpentRoot {
+    background: #080D0A;
+}
+
+/* Give functional groupings a deliberate card surface. */
+QGroupBox {
+    background: #101712;
+    border: 1px solid #2B3931;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 13px 12px 11px 12px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 9px;
+    color: #76F49B;
+    background: #080D0A;
+    font-weight: 600;
+}
+
+/* Tabs: closer to the visual concept while staying native Qt. */
+QTabWidget::pane {
+    border: none;
+    border-top: 1px solid #2B3931;
+    background: #080D0A;
+}
+
+QTabBar::tab {
+    background: #101612;
+    color: #A9B4AC;
+    border: 1px solid #202D26;
+    border-bottom: 1px solid #2B3931;
+    padding: 9px 18px;
+    min-height: 28px;
+}
+
+QTabBar::tab:hover:!selected {
+    background: #151F18;
+    color: #E2E9E4;
+    border-color: #33463A;
+}
+
+QTabBar::tab:selected {
+    background: #15241A;
+    color: #F1FFF5;
+    border-color: #355541;
+    border-bottom: 2px solid #26EC73;
+}
+
+/* Standard editable controls */
+QLineEdit,
+QComboBox,
+QSpinBox,
+QDoubleSpinBox,
+QPlainTextEdit,
+QTextEdit {
+    background: #0C130F;
+    color: #E1E8E3;
+    border: 1px solid #34433A;
+    border-radius: 6px;
+    padding: 5px 8px;
+    selection-background-color: #1A5D33;
+    selection-color: #FFFFFF;
+}
+
+QLineEdit:hover,
+QComboBox:hover,
+QSpinBox:hover,
+QDoubleSpinBox:hover,
+QPlainTextEdit:hover,
+QTextEdit:hover {
+    border-color: #466052;
+}
+
+QLineEdit:focus,
+QComboBox:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus,
+QPlainTextEdit:focus,
+QTextEdit:focus {
+    border-color: #22D967;
+}
+
+QLineEdit:disabled,
+QComboBox:disabled,
+QSpinBox:disabled,
+QDoubleSpinBox:disabled,
+QPlainTextEdit:disabled,
+QTextEdit:disabled {
+    background: #0A0F0C;
+    color: #66726A;
+    border-color: #253028;
+}
+
+/* Combo popup surface */
+QComboBox QAbstractItemView {
+    background: #0C130F;
+    color: #DDE5DF;
+    border: 1px solid #34433A;
+    selection-background-color: #174A29;
+    selection-color: #FFFFFF;
+    outline: none;
+}
+
+/* Buttons that do not carry an explicit semantic role */
+QPushButton {
+    background: #111A14;
+    color: #D9E1DB;
+    border: 1px solid #34443A;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background: #18231B;
+    border-color: #496052;
+}
+
+QPushButton:pressed {
+    background: #0D1510;
+    border-color: #2C8C4C;
+}
+
+QPushButton:disabled {
+    background: #0A100C;
+    color: #59645D;
+    border-color: #202A23;
+}
+
+/* Keep M39-F semantic button roles stronger than the generic rule. */
+QPushButton[role="primary"],
+QPushButton[serpentRole="primary"] {
+    background: #185B33;
+    color: #F4FFF7;
+    border: 1px solid #2FA45D;
+}
+
+QPushButton[role="primary"]:hover,
+QPushButton[serpentRole="primary"]:hover {
+    background: #217440;
+    border-color: #46CB79;
+}
+
+QPushButton[role="danger"] {
+    background: #5D2025;
+    color: #FFFFFF;
+    border: 1px solid #B7444C;
+}
+
+QPushButton[role="danger"]:hover {
+    background: #752A31;
+    border-color: #DA5961;
+}
+
+/* Checkboxes */
+QCheckBox {
+    color: #D6DED8;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #46564C;
+    background: #0C120E;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #2FBB62;
+}
+
+QCheckBox::indicator:checked {
+    background: #1B9A4C;
+    border-color: #31E774;
+}
+
+QCheckBox::indicator:disabled {
+    background: #0A0F0C;
+    border-color: #29332C;
+}
+
+/* Sliders */
+QSlider::groove:horizontal {
+    height: 5px;
+    background: #2C3530;
+    border-radius: 2px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #21BD5D;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    width: 16px;
+    margin: -6px 0;
+    border-radius: 8px;
+    background: #35E878;
+    border: 1px solid #6BF29A;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #61F293;
+}
+
+QSlider::groove:vertical {
+    width: 5px;
+    background: #2C3530;
+    border-radius: 2px;
+}
+
+QSlider::sub-page:vertical {
+    background: #21BD5D;
+    border-radius: 2px;
+}
+
+QSlider::handle:vertical {
+    height: 16px;
+    margin: 0 -6px;
+    border-radius: 8px;
+    background: #35E878;
+    border: 1px solid #6BF29A;
+}
+
+/* Progress / battery */
+QProgressBar {
+    background: #262E29;
+    color: #F4F7F5;
+    border: 1px solid #37443D;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 18px;
+}
+
+QProgressBar::chunk {
+    background: #25D668;
+    border-radius: 4px;
+}
+
+/* Lists and scene/workshop selections */
+QListWidget,
+QTreeWidget,
+QTableWidget,
+QListView,
+QTreeView,
+QTableView {
+    background: #0B120E;
+    alternate-background-color: #101712;
+    color: #D8E0DA;
+    border: 1px solid #324139;
+    border-radius: 6px;
+    outline: none;
+}
+
+QListWidget::item,
+QListView::item,
+QTreeView::item {
+    padding: 4px 6px;
+}
+
+QListWidget::item:selected,
+QListView::item:selected,
+QTreeView::item:selected {
+    background: #17552E;
+    color: #F4FFF7;
+}
+
+QListWidget::item:hover,
+QListView::item:hover,
+QTreeView::item:hover {
+    background: #142219;
+}
+
+/* Scroll bars */
+QScrollBar:vertical {
+    background: #090F0B;
+    width: 11px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical {
+    background: #445148;
+    min-height: 28px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #5B6C60;
+}
+
+QScrollBar:horizontal {
+    background: #090F0B;
+    height: 11px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #445148;
+    min-width: 28px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    width: 0px;
+    height: 0px;
+}
+
+/* Menubar parity with the rest of the shell */
+QMenuBar {
+    background: #0A0F0C;
+    color: #CCD5CF;
+    border-bottom: 1px solid #1F2A23;
+}
+
+QMenuBar::item {
+    padding: 6px 9px;
+    background: transparent;
+}
+
+QMenuBar::item:selected {
+    background: #14241A;
+    color: #F1FFF5;
+}
+
+/* Native application menus */
+QMenu {
+    background: #0D1410;
+    color: #DCE4DE;
+    border: 1px solid #34443A;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+QMenu::item {
+    padding: 6px 28px 6px 10px;
+    border-radius: 5px;
+}
+
+QMenu::item:selected {
+    background: #174A29;
+    color: #F3FFF6;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #2A3730;
+    margin: 5px 7px;
+}
+
+/* Tray menu: deliberately use the SAME Serpent palette as the GUI. */
+QMenu#serpentTrayMenu {
+    background: #0D1410;
+    color: #DCE4DE;
+    border: 1px solid #34443A;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QMenu#serpentTrayMenu::item {
+    background: transparent;
+    padding: 7px 30px 7px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+QMenu#serpentTrayMenu::item:selected {
+    background: #174A29;
+    color: #F4FFF7;
+    border-color: #28683E;
+}
+
+QMenu#serpentTrayMenu::separator {
+    height: 1px;
+    background: #2A3730;
+    margin: 6px 7px;
+}
+
+/* Runtime strip */
+QWidget#serpentRuntimeStrip {
+    background: #0D1410;
+    border: 1px solid #2F3D35;
+    border-radius: 7px;
+}
+
+/* Tooltip */
+QToolTip {
+    background: #101712;
+    color: #E7EEE9;
+    border: 1px solid #3A4A40;
+    padding: 5px 7px;
+}
+
+/* Make secondary explanatory text consistently quieter. */
+QLabel[serpentRole="secondaryText"],
+QLabel#serpentSecondaryLabel {
+    color: #A3AFA7;
+}
+
+/* M10.0.0.39-I - header navigation status refinement */
+QLabel#serpentHeading { min-height:46px; padding-top:2px; padding-bottom:0px; }
+QLabel#serpentSubtitle { color:#93A198; padding-top:0px; padding-bottom:3px; }
+
+QTabWidget#serpentMainTabs::pane { background:#0B110D; border:1px solid #2A3830; border-radius:8px; top:-1px; }
+QTabWidget#serpentMainTabs QTabBar::tab { background:#0D140F; color:#9DA9A1; border:1px solid transparent; border-bottom:2px solid transparent; padding:6px 14px; margin-right:2px; min-height:42px; }
+QTabWidget#serpentMainTabs QTabBar::tab:hover:!selected { background:#131D16; color:#E2EBE5; border-color:#27362E; }
+QTabWidget#serpentMainTabs QTabBar::tab:selected { background:#142219; color:#55F58B; border-color:#32473A; border-bottom:2px solid #27ED72; }
+
+QGroupBox#serpentSectionCard { background:#0E1510; border:1px solid #2B3931; border-radius:10px; padding:15px 13px 13px 13px; }
+QGroupBox#serpentSectionCard::title { subcontrol-origin:margin; subcontrol-position:top left; left:12px; padding:0 7px; color:#79F6A0; background:#0E1510; font-weight:600; }
+
+QGroupBox#serpentDeviceCard { background:#0A110D; border:1px solid #26342C; border-radius:8px; margin-top:9px; padding:10px; }
+QGroupBox#serpentDeviceCard::title { subcontrol-origin:margin; subcontrol-position:top left; left:10px; padding:0 6px; color:#E6EEE8; background:#0A110D; font-weight:600; }
+QGroupBox#serpentDeviceCard:hover { background:#0D1610; border-color:#3B5848; }
+QGroupBox#serpentDeviceCard QLabel#serpentStatusState { color:#E5ECE7; padding:1px 0 2px 0; }
+QGroupBox#serpentDeviceCard QLabel#serpentSecondaryLabel { color:#8F9D94; }
+
+QGroupBox#serpentDeviceCard QProgressBar { background:#1A241E; color:#EDF5EF; border:1px solid #34453B; border-radius:5px; text-align:center; min-height:17px; max-height:17px; }
+QGroupBox#serpentDeviceCard QProgressBar::chunk { background:#28D96C; border-radius:4px; }
+
+QWidget#serpentRuntimeStrip { background:#0A110D; border:1px solid #29372F; border-radius:7px; }
+QWidget#serpentRuntimeStrip QLabel { padding:1px 7px; }
+QLabel#serpentRuntimeGood[runtimeHealthy="true"] { color:#3BEC7D; }
+QLabel#serpentRuntimeGood[runtimeHealthy="false"] { color:#E7A642; }
+QLabel#serpentRuntimeNeutral { color:#C7D1CA; }
+
+/* M10.0.0.39-J - Status Dashboard 2.0 */
+
+QWidget#serpentStatusDashboard QGroupBox#serpentServicesCard {
+    background: #0E1510;
+    border: 1px solid #2B3931;
+    border-radius: 10px;
+    padding: 15px 13px 13px 13px;
+}
+QWidget#serpentStatusDashboard QGroupBox#serpentServicesCard::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 12px;
+    padding: 0 7px;
+    color: #79F6A0;
+    background: #0E1510;
+    font-weight: 600;
+}
+QWidget#serpentStatusDashboard QLabel#serpentServiceState {
+    background: #0A110D;
+    border: 1px solid #26342C;
+    border-radius: 6px;
+    padding: 6px 9px;
+    margin: 1px 0;
+    color: #DDE6E0;
+}
+QWidget#serpentStatusDashboard QLabel#serpentServiceState[serviceHealth="healthy"] {
+    background: #0C1710;
+    border-color: #28513A;
+}
+QWidget#serpentStatusDashboard QLabel#serpentServiceState[serviceHealth="idle"] {
+    background: #15170F;
+    border-color: #565034;
+}
+QWidget#serpentStatusDashboard QLabel#serpentServiceState[serviceHealth="error"] {
+    background: #1B1011;
+    border-color: #66363A;
+}
+QWidget#serpentStatusDashboard QLabel#serpentStatusState[deviceHealth="connected"] {
+    background: #0B1A11;
+    border: 1px solid #28513A;
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+QWidget#serpentStatusDashboard QProgressBar#serpentBatteryState {
+    background: #18221C;
+    border: 1px solid #35463C;
+    border-radius: 5px;
+    color: #F0F5F1;
+    text-align: center;
+    min-height: 17px;
+    max-height: 17px;
+}
+QWidget#serpentStatusDashboard QProgressBar#serpentBatteryState::chunk {
+    background: #28D96C;
+    border-radius: 4px;
+}
+QWidget#serpentStatusDashboard QProgressBar#serpentBatteryState[batteryState="low"] {
+    border-color: #7A5A29;
+}
+QWidget#serpentStatusDashboard QProgressBar#serpentBatteryState[batteryState="low"]::chunk {
+    background: #D99B38;
+}
+QWidget#serpentStatusDashboard QProgressBar#serpentBatteryState[batteryState="charging"] {
+    border-color: #2E6750;
+}
+QWidget#serpentStatusDashboard QProgressBar#serpentBatteryState[batteryState="charging"]::chunk {
+    background: #42E98B;
+}
+QWidget#serpentStatusDashboard QProgressBar#serpentBatteryState[batteryState="unknown"] {
+    color: #A9B4AC;
+    border-color: #3A423D;
+}
+QWidget#serpentStatusDashboard QProgressBar#serpentBatteryState[batteryState="unknown"]::chunk {
+    background: #4B554F;
+}
+
+/* M10.0.0.39-K - device page refinement */
+
+QWidget#serpentKeyboardPanel QLabel#serpentDevicePageTitle,
+QWidget#serpentMousePanel QLabel#serpentDevicePageTitle,
+QWidget#serpentGenericFixturePanel QLabel#serpentDevicePageTitle {
+    color: #F0F5F1;
+    padding-bottom: 2px;
+}
+
+QWidget#serpentKeyboardPanel QLabel#serpentDevicePageDetails,
+QWidget#serpentMousePanel QLabel#serpentDevicePageDetails,
+QWidget#serpentGenericFixturePanel QLabel#serpentDevicePageDetails,
+QWidget#serpentGenericFixturePanel QLabel#serpentDeviceTelemetry {
+    color: #8F9D94;
+}
+
+QLabel#serpentOwnershipState {
+    background: #0C1410;
+    border: 1px solid #2C3A32;
+    border-radius: 6px;
+    padding: 7px 9px;
+    color: #C8D2CB;
+}
+QLabel#serpentOwnershipState[ownershipState="individual"] {
+    background: #0B1710;
+    border-color: #28513A;
+    color: #BDE8CB;
+}
+QLabel#serpentOwnershipState[ownershipState="sync"] {
+    background: #17160D;
+    border-color: #5A5130;
+    color: #E0C981;
+}
+QLabel#serpentOwnershipState[ownershipState="disconnected"] {
+    background: #171012;
+    border-color: #5D3438;
+    color: #D7A4A8;
+}
+
+QGroupBox#serpentEffectEditor {
+    background: #0D1410;
+    border: 1px solid #2B3931;
+    border-radius: 9px;
+    padding: 12px 11px 10px 11px;
+}
+QGroupBox#serpentEffectEditor::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    padding: 0 7px;
+    color: #CFE0D4;
+    background: #0D1410;
+    font-weight: 600;
+}
+QGroupBox#serpentEffectEditor[controlState="sync"]:disabled {
+    background: #15140D;
+    border-color: #554C2F;
+}
+QGroupBox#serpentEffectEditor[controlState="sync"]:disabled::title {
+    color: #D7C37E;
+    background: #15140D;
+}
+QGroupBox#serpentEffectEditor[controlState="disconnected"]:disabled {
+    background: #141012;
+    border-color: #533238;
+}
+QGroupBox#serpentEffectEditor[controlState="disconnected"]:disabled::title {
+    color: #C99A9F;
+    background: #141012;
+}
+
+QLabel#serpentDeviceActionStatus {
+    color: #A5B1A9;
+    padding: 3px 1px;
+}
+
+QWidget#serpentMousePanel QCheckBox,
+QWidget#serpentKeyboardPanel QCheckBox,
+QWidget#serpentGenericFixturePanel QCheckBox {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+/* M10.0.0.39-L - workshop scenes sync visual roles */
+
+/* Shared action hierarchy for the three workflow surfaces. */
+QWidget#serpentScenesPanel QPushButton[serpentRole="primaryAction"],
+QWidget#serpentSyncPanel QPushButton[serpentRole="primaryAction"] {
+    background: #14321F;
+    color: #EFFFF4;
+    border: 1px solid #2CEB72;
+    font-weight: 600;
+}
+QWidget#serpentScenesPanel QPushButton[serpentRole="primaryAction"]:hover,
+QWidget#serpentSyncPanel QPushButton[serpentRole="primaryAction"]:hover {
+    background: #194329;
+    border-color: #55F58B;
+}
+QWidget#serpentScenesPanel QPushButton[serpentRole="primaryAction"]:disabled,
+QWidget#serpentSyncPanel QPushButton[serpentRole="primaryAction"]:disabled {
+    background: #101713;
+    color: #647169;
+    border-color: #29352E;
+    font-weight: 500;
+}
+QWidget#serpentScenesPanel QPushButton[serpentRole="secondaryAction"],
+QWidget#serpentSyncPanel QPushButton[serpentRole="secondaryAction"] {
+    background: #111914;
+    border-color: #34443A;
+}
+QWidget#serpentScenesPanel QPushButton[serpentRole="dangerAction"],
+QWidget#serpentSyncPanel QPushButton[serpentRole="dangerAction"] {
+    background: #1A1412;
+    color: #E4B0A7;
+    border-color: #5A332C;
+}
+QWidget#serpentScenesPanel QPushButton[serpentRole="dangerAction"]:hover,
+QWidget#serpentSyncPanel QPushButton[serpentRole="dangerAction"]:hover {
+    background: #2A1714;
+    color: #FFD5CD;
+    border-color: #A95343;
+}
+QWidget#serpentScenesPanel QPushButton[serpentRole="dangerAction"]:disabled,
+QWidget#serpentSyncPanel QPushButton[serpentRole="dangerAction"]:disabled {
+    background: #101512;
+    color: #655E5B;
+    border-color: #2B2927;
+}
+
+/* Scenes: make the browse/detail split read as a first-class library surface. */
+QWidget#serpentScenesPanel {
+    background: transparent;
+}
+QListWidget#serpentSceneList {
+    background: #0A110D;
+    border: 1px solid #2B3931;
+    border-radius: 8px;
+    padding: 5px;
+}
+QListWidget#serpentSceneList::item {
+    color: #C7D1CA;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 9px 10px;
+    margin: 2px;
+}
+QListWidget#serpentSceneList::item:hover:!selected {
+    background: #101A13;
+    border-color: #2B3B31;
+    color: #ECF4EE;
+}
+QListWidget#serpentSceneList::item:selected {
+    background: #13261A;
+    border-color: #2D7145;
+    color: #F1FFF5;
+}
+QPlainTextEdit#serpentSceneDetails {
+    background: #0A110D;
+    color: #BCC8C0;
+    border: 1px solid #2B3931;
+    border-radius: 8px;
+    padding: 9px;
+    selection-background-color: #18542E;
+}
+QLabel#serpentSceneStatus[serpentRole="statusStrip"] {
+    background: #0C1510;
+    color: #A9B7AE;
+    border: 1px solid #29382F;
+    border-radius: 6px;
+    padding: 6px 9px;
+}
+
+/* Sync: separate editor, capability metadata, membership and runtime state. */
+QWidget#serpentSyncPanel {
+    background: transparent;
+}
+QGroupBox#serpentSyncEffectInfoCard,
+QGroupBox#serpentSyncRenderingCard,
+QGroupBox#serpentSyncMembersCard {
+    background: #0D1510;
+    border: 1px solid #2B3A31;
+    border-radius: 9px;
+    padding: 14px 12px 11px 12px;
+}
+QGroupBox#serpentSyncEffectInfoCard::title,
+QGroupBox#serpentSyncRenderingCard::title,
+QGroupBox#serpentSyncMembersCard::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 11px;
+    padding: 0 7px;
+    color: #79F6A0;
+    background: #0D1510;
+    font-weight: 600;
+}
+QWidget#serpentSyncPanel QLabel[serpentRole="secondaryText"] {
+    color: #9EACA3;
+}
+QLabel#serpentSyncStatus[serpentRole="statusStrip"] {
+    background: #0C1510;
+    color: #B9C6BE;
+    border: 1px solid #2B3A31;
+    border-radius: 6px;
+    padding: 6px 9px;
+}
+
+/* Workshop: scope polish to the external EffectsWorkshopPanel root only.
+   No global colour-button/effect selectors are introduced here. */
+QWidget#serpentEffectsWorkshop {
+    background: transparent;
+}
+QWidget#serpentEffectsWorkshop QGroupBox {
+    border-radius: 9px;
+}
+QWidget#serpentEffectsWorkshop QListWidget,
+QWidget#serpentEffectsWorkshop QTreeWidget,
+QWidget#serpentEffectsWorkshop QTableWidget {
+    border-color: #2D3B33;
+}
+QWidget#serpentEffectsWorkshop QListWidget::item:selected,
+QWidget#serpentEffectsWorkshop QTreeWidget::item:selected,
+QWidget#serpentEffectsWorkshop QTableWidget::item:selected {
+    background: #153622;
+    color: #F1FFF5;
+}
+
+/* M10.0.0.39-M - release banner header */
+
+/* Wide canonical Serpent banner: larger visual presence without stretching.
+   QPixmap scaling remains KeepAspectRatio + SmoothTransformation. */
+QLabel#serpentHeading {
+    min-height: 142px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    background: transparent;
+}
+
+QLabel#serpentSubtitle {
+    min-height: 0px;
+    max-height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* M10.0.0.39-M-Fix2 - wide release banner presentation */
+
+/* The installed header asset is a wide crop of the same release artwork.
+   KeepAspectRatio remains active; this only gives the banner more horizontal
+   display room so it reads as a masthead instead of a centered logo card. */
+QLabel#serpentHeading {
+    min-height: 220px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

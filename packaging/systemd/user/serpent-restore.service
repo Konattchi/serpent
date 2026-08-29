@@ -1,0 +1,13 @@
+[Unit]
+Description=Restore the current Serpent lighting owner
+After=openrazer-daemon.service
+Wants=openrazer-daemon.service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/share/serpent/serpent-restore.sh
+RemainAfterExit=no
+TimeoutStartSec=25s
+
+[Install]
+WantedBy=default.target

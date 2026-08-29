@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "razer-deathstalker-v2",
+  "manufacturer": "Razer",
+  "model": "DeathStalker V2",
+  "variant": "Wired",
+  "device_class": "keyboard",
+  "usb": {
+    "vendor_id": "1532",
+    "product_id": "0295"
+  },
+  "detection": {
+    "openrazer_name_contains": "DeathStalker V2",
+    "serial": "PM2338F72700300"
+  },
+  "backend": {
+    "type": "hardware-effects-sysfs",
+    "sysfs_required_endpoint": "matrix_effect_static"
+  },
+  "capabilities": {
+    "brightness": true,
+    "matrix": {
+      "rows": 6,
+      "columns": 22
+    },
+    "media_controls": true,
+    "per_key_rgb": true
+  },
+  "effects": {
+    "off": {
+      "endpoint": "matrix_effect_none",
+      "payload": "trigger"
+    },
+    "static": {
+      "endpoint": "matrix_effect_static",
+      "payload": "rgb",
+      "colours": 1
+    },
+    "spectrum": {
+      "endpoint": "matrix_effect_spectrum",
+      "payload": "trigger"
+    },
+    "wave": {
+      "endpoint": "matrix_effect_wave",
+      "payload": "ascii-direction",
+      "directions": [
+        1,
+        2
+      ]
+    },
+    "reactive": {
+      "endpoint": "matrix_effect_reactive",
+      "payload": "speed-rgb",
+      "colours": 1,
+      "speeds": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "breath-random": {
+      "endpoint": "matrix_effect_breath",
+      "payload": "random-trigger"
+    },
+    "breath-single": {
+      "endpoint": "matrix_effect_breath",
+      "payload": "rgb",
+      "colours": 1
+    },
+    "breath-dual": {
+      "endpoint": "matrix_effect_breath",
+      "payload": "rgb-rgb",
+      "colours": 2
+    },
+    "starlight-random": {
+      "endpoint": "matrix_effect_starlight",
+      "payload": "speed",
+      "speeds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "starlight-single": {
+      "endpoint": "matrix_effect_starlight",
+      "payload": "speed-rgb",
+      "colours": 1,
+      "speeds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "starlight-dual": {
+      "endpoint": "matrix_effect_starlight",
+      "payload": "speed-rgb-rgb",
+      "colours": 2,
+      "speeds": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "safety": {
+    "preserve_driver_mode": true,
+    "required_driver_mode": false
+  },
+  "input": {
+    "interfaces": [
+      "usb-Razer_Razer_DeathStalker_V2-event-kbd",
+      "usb-Razer_Razer_DeathStalker_V2-if01-event-kbd"
+    ],
+    "mapping": {
+      "type": "openrazer-keyboard",
+      "row_offset": 0,
+      "column_offset": -1
+    }
+  }
+}

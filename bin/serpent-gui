@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+set -u
+
+SERPENT_DIR="$HOME/.local/share/serpent"
+GUI="$SERPENT_DIR/gui/app.py"
+
+RUNTIME_DIR="${XDG_RUNTIME_DIR:-/tmp}"
+STATE_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/serpent"
+
+LOCK_FILE="$RUNTIME_DIR/serpent-gui.lock"
+SHOW_FILE="$RUNTIME_DIR/serpent-gui-show"
+LOG_FILE="$STATE_DIR/gui.log"
+
+mkdir -p "$STATE_DIR"
+
+if [ ! -f "$GUI" ]; then
+    printf 'Serpent GUI was not found: %s\n' "$GUI" >&2
+    exit 1
+fi
+
+exec 9>"$LOCK_FILE"
+
+if ! /usr/bin/flock -n 9; then
+    case " $* " in
+        *" --tray "*)
+            # A Serpent instance already owns the tray.
+            exit 0
+            ;;
+        *)
+            # Ask the existing instance to show its window.
+            : > "$SHOW_FILE"
+            exit 0
+            ;;
+    esac
+fi
+
+exec /usr/bin/python3 "$GUI" "$@" >>"$LOG_FILE" 2>&1

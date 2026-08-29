@@ -1,0 +1,18 @@
+[Unit]
+Description=Serpent shared-clock lighting synchronization engine
+After=openrazer-daemon.service
+Wants=openrazer-daemon.service
+Conflicts=naga-effects.service
+
+[Service]
+Type=simple
+ExecStartPre=%h/.local/share/serpent/serpent-sync-start.sh
+ExecStart=/usr/bin/python3 %h/.local/share/serpent/sync_engine.py
+ExecStopPost=%h/.local/share/serpent/serpent-sync-stop.sh
+Restart=on-failure
+RestartSec=2
+KillMode=control-group
+TimeoutStopSec=8
+
+[Install]
+WantedBy=default.target

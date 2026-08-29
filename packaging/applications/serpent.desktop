@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Serpent
+GenericName=RGB Device Controller
+Comment=Fixture-driven RGB control for Linux
+Exec=serpent-gui
+Icon=serpent
+Terminal=false
+Categories=Utility;
+Keywords=RGB;Razer;Mouse;Keyboard;Lighting;Chroma;
+StartupNotify=true
+StartupWMClass=Serpent

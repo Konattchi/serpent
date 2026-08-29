@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+set -u
+
+SERPENT_DIR="$HOME/.local/share/serpent"
+
+case "${1:-}" in
+    doctor)
+        shift
+        exec /usr/bin/python3 \
+            "$SERPENT_DIR/doctor.py" \
+            "$@"
+        ;;
+
+    fixtures)
+        shift
+        exec /usr/bin/python3 \
+            "$SERPENT_DIR/fixtures_cli.py" \
+            "$@"
+        ;;
+
+    *)
+        exec /usr/bin/python3 \
+            "$SERPENT_DIR/serpent.py" \
+            "$@"
+        ;;
+esac

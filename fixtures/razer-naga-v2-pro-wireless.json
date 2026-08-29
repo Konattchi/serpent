@@ -1,0 +1,151 @@
+{
+    "schema_version": 1,
+    "id": "razer-naga-v2-pro-wireless",
+    "manufacturer": "Razer",
+    "model": "Naga V2 Pro",
+    "variant": "Wireless",
+    "device_class": "mouse",
+    "usb": {
+        "vendor_id": "1532",
+        "product_id": "00A8"
+    },
+    "zones": {
+        "logo": {
+            "name": "Logo",
+            "type": "logo",
+            "mapping": {
+                "type": "matrix-columns",
+                "columns": [
+                    0
+                ]
+            },
+            "visible": true,
+            "confirmed": true,
+            "controllable": true,
+            "sync_groupable": true
+        },
+        "side-buttons": {
+            "name": "Side Buttons",
+            "type": "side-buttons",
+            "mapping": {
+                "type": "matrix-columns",
+                "columns": [
+                    1
+                ]
+            },
+            "visible": true,
+            "confirmed": true,
+            "controllable": true,
+            "sync_groupable": true
+        },
+        "aux-2": {
+            "name": "Auxiliary Channel 2",
+            "type": "auxiliary",
+            "mapping": {
+                "type": "matrix-columns",
+                "columns": [
+                    2
+                ]
+            },
+            "visible": false,
+            "confirmed": false,
+            "controllable": false,
+            "notes": "No visible output with the currently attached side plate. Retained for future attachment and device research.",
+            "sync_groupable": false
+        }
+    },
+    "detection": {
+        "openrazer_name_contains": "Naga V2 Pro",
+        "serial": "PM2420H24701631",
+        "serial_policy": "preferred",
+        "generated_serial_prefixes": [
+            "UNKNOWN_"
+        ]
+    },
+    "backend": {
+        "type": "software-rgb-sysfs",
+        "sysfs_required_endpoint": "matrix_effect_static",
+        "service": "serpent-individual.service",
+        "linked_source_zone": "logo"
+    },
+    "capabilities": {
+        "battery": true,
+        "charging_state": true,
+        "dpi": true,
+        "poll_rate": true,
+        "brightness": true,
+        "matrix": {
+            "rows": 1,
+            "columns": 3
+        }
+    },
+    "effects": {
+        "off": {
+            "backend": "software"
+        },
+        "static": {
+            "backend": "software",
+            "colours": 1
+        },
+        "spectrum": {
+            "backend": "software",
+            "speed": true
+        },
+        "breath-single": {
+            "backend": "software",
+            "colours": 1,
+            "speed": true
+        },
+        "breath-dual": {
+            "backend": "software",
+            "colours": 2,
+            "speed": true
+        }
+    },
+    "safety": {
+        "preserve_driver_mode": false
+    },
+    "performance": {
+        "dpi": {
+            "endpoint": "dpi",
+            "stages_endpoint": "dpi_stages",
+            "axes": 2,
+            "maximum": 30000,
+            "read_format": "ascii-colon-pair",
+            "write_format": "ascii-colon-pair",
+            "model": "staged",
+            "stage_count_source": "device"
+        },
+        "polling_rate": {
+            "endpoint": "poll_rate",
+            "read_format": "ascii-integer",
+            "write_format": "ascii-integer",
+            "values": []
+        },
+        "device_mode": {
+            "endpoint": "device_mode",
+            "read_format": "binary-pair"
+        }
+    },
+    "input": {
+        "interfaces": [
+            "usb-Razer_Razer_Naga_V2_Pro-event-mouse",
+            "usb-Razer_Razer_Naga_V2_Pro-if01-event-mouse",
+            "usb-Razer_Razer_Naga_V2_Pro-if02-event-kbd"
+        ],
+        "buttons": {
+            "type": "linux-mouse",
+            "minimum_code": 272,
+            "maximum_code": 279
+        },
+        "macro": {
+            "interface": "usb-Razer_Razer_Naga_V2_Pro-if02-event-kbd",
+            "policy": "collapse-chord",
+            "event_code": "NAGA_MACRO_BUTTON"
+        }
+    },
+    "telemetry": {
+        "battery": true,
+        "charging": true
+    }
+}
